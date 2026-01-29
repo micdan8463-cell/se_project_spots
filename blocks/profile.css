@@ -1,0 +1,121 @@
+.profile {
+  display: flex;
+  padding: 34px 0 20px;
+  border-bottom: 1px rgba(33, 33,33, .4) solid;
+}
+
+.profile__avatar {
+  width: 190px;
+  height: 190px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__name {
+  margin: 0 0 12px;
+  font-weight: 500;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.profile__description {
+  margin: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;;
+}
+
+
+.profile__edit-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  margin: 110px 313px 0 0;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: .7;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border: none;
+}
+
+.profile__pencil {
+  margin: .33px 8px .33px 0;
+  width: 18.48px;
+  opacity: 1;
+}
+
+.profile__add-btn {
+  margin: 138px 0 20px auto;
+  padding: 0;
+  width: 157px;
+  height: 52px;
+  border-radius: 8px;
+  opacity: 1;
+  background: #212121;
+  color: #fff;
+}
+
+.profile__plus {
+  height: 12px;
+  width: 12px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 627px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+   }
+
+  .profile__avatar{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 12px;
+    margin-right: 0;
+  }
+
+  .profile__add-btn {
+    margin: 0;
+    max-width: 288px;
+    width: 100%;
+  }
+
+  .profile__name {
+  font-size: 20px;
+  margin-bottom: 6px;
+  max-width: 288px;
+  }
+
+  .profile__description {
+    margin-bottom: 32px;
+    font-size: 16px;
+    max-width: 288px;
+  }
+
+  .profile__column {
+    text-align: center;
+    margin-right: 0;
+  }
+}
