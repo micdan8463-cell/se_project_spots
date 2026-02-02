@@ -1,16 +1,25 @@
-# Project 3: Spots
+# Spots
 
-### Overview  
+  Spot is a website where users can share and post images.
 
-* Intro  
-* Figma  
-* Images  
+## Description
+
+  This website allow the user to edit the avatar and shate pictures of their likes. Also let other users share which pcitures they like. It also is an adaptable website that adapts to differents types of devices. 
+
+### Tech Stack
   
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
+  - html
+  - css
+  - grid 
+  - responsive website
+  - interactive website
+
+#### Deployment
+
+  This webpage is deployed in GitHub pages.
+    - Deployment link: https://github.com/micdan8463-cell/se_project_spots
+
+*
   
 * [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
   

@@ -1,13 +1,11 @@
 .footer {
   display: flex;
+  padding: 0;
 }
+
 .footer__text {
-  width: 104px;
-  height: 16px;
   opacity: 1;
-  position: relative;
-  top: 1340px;
-  left: 668px;
+  margin: 60px auto 60px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: Regular;
