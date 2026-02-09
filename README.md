@@ -28,6 +28,6 @@
     - Deployment link: https://github.com/micdan8463-cell/se_project_spots
 
 
-##### Video Link
+##### Project Pitch Video
 
-  [2-minute Feature Overview](https://www.loom.com/share/b23ba0b43e874f408452999e4cd3c389)
+    Check out [this video](https://www.loom.com/share/b23ba0b43e874f408452999e4cd3c389), where I describe my project and some challenges I faced while building it.
