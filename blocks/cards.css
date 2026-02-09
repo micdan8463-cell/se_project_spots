@@ -2,11 +2,10 @@
   padding-top: 20px;
   margin: 0 auto 100px auto;
   max-width: 1280px;
-}
 
 .cards__list {
   list-style-type: none;
-  margin: 0 0 40px;
+  margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, 413px);
@@ -16,12 +15,5 @@
 
 @media screen and (max-width: 627px) {
  .cards__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
-  justify-content: center;
-  gap: 40px 20px;
-}
-}
+    grid-template-columns: repeat(auto-fit, 288px);
+  }

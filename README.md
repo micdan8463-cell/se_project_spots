@@ -14,17 +14,20 @@
   - responsive website
   - interactive website
 
-#### Deployment
+#### Images
+
+  ![Spot screen image 1440px screen size](./images/Spots%20App%201440px.png)
+  ![Spot screen image 1440px screen size overflow text](./images/Spots%20App%201440px%20Name%20Overflow.jpg)
+  ![Spot hover, effects, components image](./images/Components.png)
+  ![Spot mobile image overlow text](./images/Spots%20App%20Mobile%20Version.jpg)
+  ![Spot mobile image](./images/Spots%20App%20Mobile%20Version%20(1).jpg)
+
+##### Deployment
 
   This webpage is deployed in GitHub pages.
     - Deployment link: https://github.com/micdan8463-cell/se_project_spots
 
-*
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+
+##### Video Link
+
+  [2-minute Feature Overview](https://www.loom.com/share/b23ba0b43e874f408452999e4cd3c389)
