@@ -10,14 +10,19 @@
 
 
 .card__title {
-  ffont-family: Poppins, Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-style: Medium;
+  font-style: normal;
   font-size: 20px;
   line-height: 120%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #212121;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 353px;
 }
+
 .card__content {
   display: flex;
   align-items: center;
@@ -31,6 +36,7 @@
   border: none;
   background-color: transparent;
   opacity: 40%;
+  cursor: pointer;
 }
 
 .card__like-btn:hover {

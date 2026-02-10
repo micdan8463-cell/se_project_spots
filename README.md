@@ -25,7 +25,7 @@
 ##### Deployment
 
   This webpage is deployed in GitHub pages.
-    - Deployment link: https://github.com/micdan8463-cell/se_project_spots
+    - Deployment link: https://micdan8463-cell.github.io/se_project_spots/ 
 
 
 ##### Project Pitch Video
