@@ -61,6 +61,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   border: none;
+  background: transparent;
 }
 
 .profile__edit-btn:hover {
@@ -76,14 +77,14 @@
 }
 
 .profile__add-btn {
-  margin: 138px 0 20px auto;
+  margin: auto 0 0 auto;
   padding: 0;
   width: 157px;
   height: 52px;
   border-radius: 8px;
   opacity: 1;
   background: #212121;
-  color: #fff;
+  color: #fcf5e5;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -146,6 +147,7 @@
 
   .profile__column {
     text-align: center;
+    align-items: center;
     margin-right: 0;
   }
 }
