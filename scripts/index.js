@@ -10,6 +10,10 @@ const editNewPostForm = newPostModal.querySelector(".modal__form");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
+const addCardFormEl = newPostModal.querySelector (".modal__form");
+const nameInput = addCardFormEl.querySelector("#card-caption-input");
+const linkInput = addCardFormEl.querySelector("#card-image-input");
+
 
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
@@ -32,11 +36,19 @@ newPostCloseBtn.addEventListener("click", function () {
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
     profileNameEl.textContent = editProfileNameInput.value;
-    // todo handle the other input
     editProfileModal.classList.remove("modal_is-opened");
-    newPostModal.classList.remove("modal_is-opened");
   }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
-editNewPostForm.addEventListener("submit", handleEditProfileSubmit)
+
+
+function handleAddCardSubmit(evt) {
+  evt.preventDefault();
+  console.log(nameInput.value);
+  console.log(linkInput.value);
+  newPostModal.classList.remove("modal_is-opened");
+
+}
+
+  addCardFormEl.addEventListener('submit', handleAddCardSubmit);
