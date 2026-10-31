@@ -27,12 +27,18 @@
   border-radius: 8px;
   background-color: #fff;
   padding: 32px 50px;
-  position:relative;
+  position: relative;
+  box-sizing: border-box;
 }
 
 
 .modal__close-btn {
   position:absolute;
+  background: transparent;
+  background-image: url(../images/CloseIcon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
   top: 32px;
   right: 50px;
   width: 40px;
@@ -40,15 +46,27 @@
   opacity: 40%;
 }
 
+.modal__close-btn:hover {
+  opacity: 0.6;
+}
+
+  .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
 .modal__title {
   margin: 0 0 32px;
-  font-family: Poppins;
+  font-family:  "Poppins", Arial, sans-serif;
   font-weight: 500;
-  font-style: Medium;
+  font-style: normal;
   font-size: 32px;
-  leading-trim: NONE;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #212121;
 }
 
@@ -61,28 +79,27 @@
   margin: 0 0 32px;
   font-family: Poppins;
   font-weight: 500;
-  font-style: Medium;
+  font-style: normal;
   font-size: 16px;
-  leading-trim: NONE;
   line-height: 110.00000000000001%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #212121B2;
   }
 
 .modal__input {
   display: block;
   margin: 8px 0 0;
-  width:100%;
+  width: 100%;
   font-family: Poppins;
   font-weight: 500;
-  font-style: Medium;
+  font-style: normal;
   font-size: 16px;
-  leading-trim: NONE;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #2121214D;
   padding: 16px 12px;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .modal__input::placeholder {
@@ -101,6 +118,12 @@
   padding-bottom: 18px;
   padding-left: 32px;
   gap: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.modal__submit-btn:hover {
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 730px){
@@ -108,3 +131,4 @@
    max-width: 730px;
    width: 100%;
   }
+}
