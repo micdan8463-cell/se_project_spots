@@ -58,6 +58,17 @@ function getCardElement(data) {
   cardImageEl.alt = data.name;
   cardTitleEl.textContent = data.name;
 
+  const cardLikeBtnEl = cardElement.querySelector(".card__like-btn");
+  cardLikeBtnEl.addEventListener("click", () => {
+    cardLikeBtnEl.classList.toggle("card__like-btn_active");
+
+  });
+const cardDeleteBtnEl = cardElement.querySelector(".card__delete-btn");
+  cardDeleteBtnEl.addEventListener("click", () => {
+    cardElement.closest(".card").remove();
+    cardElement = null;
+  });
+
   return cardElement;
 }
 
@@ -69,7 +80,7 @@ function closeModal(Modal) {
   Modal.classList.remove("modal_is-opened");
 }
 
-// Open edit profile modal
+
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
@@ -77,22 +88,22 @@ editProfileBtn.addEventListener("click", function () {
   openModal(editProfileModal);
 });
 
-// Close edit profile modal
+
 editProfileCloseBtn.addEventListener("click", function () {
   closeModal(editProfileModal);
 });
 
-// Open new post modal
+
 addCardBtn.addEventListener("click", function () {
   openModal(newPostModal);
 });
 
-// Close new post modal
+
 newPostCloseBtn.addEventListener("click", function () {
   closeModal(newPostModal);
 });
 
-// Edit profile form submission
+
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
 
@@ -104,7 +115,7 @@ function handleEditProfileSubmit(evt) {
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
-// Add new card form submission
+
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
 
@@ -123,7 +134,7 @@ function handleAddCardSubmit(evt) {
 
 addCardFormEl.addEventListener("submit", handleAddCardSubmit);
 
-// Display initial cards
+
 initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
