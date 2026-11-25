@@ -1,6 +1,3 @@
-/*add correct font styles for everything */
-/*todo add responsive design */
-
 .modal {
   visibility: hidden;
   background-color: #00000080;
@@ -14,7 +11,12 @@
   align-items: center;
   opacity: 0;
   transition: visibility 0.3s, opacity 0.3s;
-  }
+  padding: 0 10px;
+}
+
+.modal_type_prview {
+ padding: 0 16px;
+}
 
 .modal_is-opened {
   visibility: visible;
@@ -24,7 +26,7 @@
 .modal__container {
   max-width: 730px;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #fff;
   padding: 32px 50px;
   position: relative;
@@ -45,6 +47,14 @@
   height: 40px;
   opacity: 40%;
 }
+
+.modal__close_type_preview {
+  /*todo - set up color correct background image */
+  top: 0;
+  right: -52.5px;
+}
+
+/*todo set up preview close button's hover state */
 
 .modal__close-btn:hover {
   opacity: 0.6;
@@ -128,9 +138,60 @@
   opacity: 0.6;
 }
 
-@media screen and (max-width: 730px){
-  .modal__submit-btn {
-   max-width: 730px;
-   width: 100%;
+.modal__image-container {
+  position: relative;
+}
+
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border: 8px;
+}
+
+.modal__caption {
+  /*todo style correctly */
+  color: white;
+}
+
+@media screen and (max-width: 480px){
+  .modal__container {
+   padding: 22px 12px 12px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal_close-btn {
+    top: 22px;
+    right: 22px;
+  }
+
+  .modal__form {
+    margin-top: 34px;
+  }
+
+  .modal__input {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .modal__button{
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 627px){
+ /*Placed below the 480px media querry to avoid being overritten.*/
+  .modal__close_type_preview {
+    top: -48px;
+    right: 0;
+  }
+
+  .modal__image {
+    max-width: unset;
   }
 }
