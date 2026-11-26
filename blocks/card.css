@@ -43,22 +43,26 @@
 }
 
 .card__delete-btn {
+position: absolute;
 width: 32px;
 height: 32px;
-position: absolute;
-top: 10px;
+opacity: 1;
+top: 9px;
 right: 10px;
-left: 371px;
-bottom: 371px;
-background-image: url(../images/trashback.png);
 background-image: url(../images/trash2.svg);
-object-fit: contain;
-position: center;
-background: transparent;
-background: #0000004D;
 background-repeat: no-repeat;
-color: #FFFFFF;
+background-position: center;
+background-color: #0000004D;
+border: none;
+border-radius: 50%;
 }
+
+.card__delete-btn:hover {
+  cursor: pointer;
+  background-color: #FF6565;
+}
+
+
 /*todo - hover state for delete button */
 
 .card__like-btn {
