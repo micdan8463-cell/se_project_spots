@@ -62,9 +62,6 @@ border-radius: 50%;
   background-color: #FF6565;
 }
 
-
-/*todo - hover state for delete button */
-
 .card__like-btn {
   background-image: url(../images/like.svg);
   width: 23px;
